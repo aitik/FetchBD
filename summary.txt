@@ -1,0 +1,38 @@
+1. Why did you choose the tools, libraries, and language you used for the coding exercise?
+
+I chose Java language, because it's the most comfortable language I am with. I didn't use any
+libraries that need to be downloaded. Only BufferedReader and FileReader read the CSV file.
+I also used a hashtable to store balances of each payer, so there won't be any duplicates in case
+there are several transactions from the same payer. It's also convenient to update the balance by
+using hashtable rather than an array or array list.
+
+2. What are the advantages and disadvantages of your solution?
+
+Advantages:
+The code is pretty readable as I left a lot of comments explaining almost every step of the program.
+I implemented a helper method to process CSV file which returns a list of transactions, so it would
+be easier to test it. There is also a separate class for the Transaction class, so it's easier
+to store information about transaction, to retrieve it, to test the class, and easy to modify if
+we will be storing more information about each transaction.
+
+Disadvantages:
+It might be not very efficient for large datasets since I'm using the built-in sort function which
+has a complexity of O(n*log(n)).
+The solution is also pretty long. It has multiple classes and multiple methods in each.
+
+3. What has been a favorite school/personal project thus far? What about it that challenged you?
+My most favorite project so far is probably Cipherdle. It's a website http://cipherdle.com/
+that contains a fun variation of popular game Wordle. Even though it's submitted as part of a
+hackathon, I spent more time fixing bugs and deploying after the submission. It's my favorite
+probably because it's a cool and original variation of Wordle, and I can send it to my friends
+to challenge them. It's not as easy as Wordle, as it takes about 15 minutes to solve since it
+uses a word cipher in the second stage, so it requires some memorization to process the cipher.
+It's also my first project for which I bought a domain and hosted on github-pages, so I'm proud of it.
+
+The biggest challenge was probably time, since it's a part of a hackathon I had only 2 days, during
+which I needed to replicate the original UI of Wordle, and build fully functional app using React.
+I had some experience using React before it, but it's still pretty challenging to exactly copy UI.
+While it wasn't too difficult to implement cipher and logistics of the game, it's pretty hard to
+organize data fields and set up localStorage which was added later. But thanks to Google, it's all
+solved eventually.
+
